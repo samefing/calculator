@@ -11,8 +11,8 @@ exports.calculate = function(req, res) {
   });
 
   var operations = {
-    // fixed add function
-    'add':      function(a,b) { return a + b },
+    // using + operator to type cast vairables as integers in order to prevent string concatenation
+    'add':      function(a,b) { return +a + +b },
     'subtract': function(a,b) { return a - b },
     'multiply': function(a,b) { return a * b },
     'divide':   function(a,b) { return a / b },
